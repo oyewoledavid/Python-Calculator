@@ -6,25 +6,28 @@
 
 
 
+from this import d
+
+
 def start():
     first_number = float(input("Enter First Number: "))
     operator = input("Enter an Operator: ")
     second_number = float(input("Enter second Number: "))
 
     if operator == "+":
-        print('{} + {}'.format(first_number, second_number))
+        print("%d + %d" % (first_number, second_number))
         print(first_number + second_number)
     elif operator == "*":
-        print('{} * {} = '.format(first_number, second_number))
+        print("%d * %d" % (first_number, second_number))
         print(first_number * second_number)
     elif operator == "-":
-        print('{} - {} = '.format(first_number, second_number))
+        print("%d - %d" % (first_number, second_number))
         print(first_number - second_number)
     elif operator == "/":
-        print('{} / {} = '.format(first_number, second_number))
+        print("%d / %d" % (first_number, second_number))
         print(first_number / second_number)
     elif operator == "%":
-        print('{} % {} = '.format(first_number, second_number))
+        print("%d modulus %d" % (first_number, second_number))
         print(first_number % second_number)
     else:
         print("Enter a valid Number and operator")
